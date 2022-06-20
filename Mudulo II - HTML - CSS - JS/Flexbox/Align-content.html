@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid red;
+        }
+
+        .item{
+            background-color: blueviolet;
+            color: white;
+            flex: 1;
+            text-align: center;
+            padding: 0 5px;
+            margin: 5px;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Strectch</p>
+    <section class="container strecth">
+        <div class="item">Texto texto texto textoTexto texto textoTexto texto texto</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+        <div class="item">Texto textoTexto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">6</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+    </section>
+
+    <p>Center</p>
+    <section class="container center">
+        <div class="item">Texto texto texto textoTexto texto textoTexto texto texto</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+        <div class="item">Texto textoTexto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">6</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+    </section>
+
+    <p>Start</p>
+    <section class="container start">
+        <div class="item">Texto texto texto textoTexto texto textoTexto texto texto</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+        <div class="item">Texto textoTexto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">6</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+    </section>
+
+    <p>End</p>
+    <section class="container end">
+        <div class="item">Texto texto texto textoTexto texto textoTexto texto texto</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+        <div class="item">Texto textoTexto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">6</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+    </section>
+
+    <p>Space-around</p>
+    <section class="container space-around">
+        <div class="item">Texto texto texto textoTexto texto textoTexto texto texto</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+        <div class="item">Texto textoTexto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">6</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+    </section>
+
+    <p>Space-between</p>
+    <section class="container space-around">
+        <div class="item">Texto texto texto textoTexto texto textoTexto texto texto</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+        <div class="item">Texto textoTexto texto texto</div>
+        <div class="item">Texto texto texto</div>
+        <div class="item">Texto texto textoTexto texto textoTexto texto textoTexto texto textoTexto texto textoTexto texto texto</div>
+        <div class="item">6</div>
+        <div class="item">Texto texto textoTexto texto texto</div>
+    </section>
+
+    
+    
+</body>
+</html>
