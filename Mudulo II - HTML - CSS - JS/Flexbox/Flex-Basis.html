@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando Flex basis</title>
+
+    <style>
+        .container{
+            max-width: 500px;
+            display: flex;
+            border: 2px solid red;
+        }
+
+        .item{
+            background-color: blueviolet;
+            color: white;
+            padding: 5px;
+            margin: 2px;
+            text-align: center;
+        }
+
+        .basis-auto{
+            flex-basis: auto;
+        }
+
+        .basis-0{
+            flex-basis: 0;
+        }
+
+        .basis-100px{
+            flex-basis: 100px;
+        }
+
+        .flex-grow1{
+            flex-grow: 1;
+        }
+
+        .flex-grow2{
+            flex-grow: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Basis Auto</p>
+    <section class="container">
+        <div class="item basis-auto flex-grow1">1</div>
+        <div class="item basis-auto flex-grow1">34542</div>
+        <div class="item basis-auto flex-grow1">3</div>
+        <div class="item basis-auto flex-grow1">4</div>
+        <div class="item basis-auto flex-grow2">5</div>
+    </section>
+
+    <p>Basis 0</p>
+    <section class="container">
+        <div class="item basis-0 flex-grow1">134534</div>
+        <div class="item basis-0 flex-grow1">34542</div>
+        <div class="item basis-0 flex-grow1">3</div>
+        <div class="item basis-0 flex-grow1">4</div>
+        <div class="item basis-0 flex-grow2">5</div>
+    </section>
+
+    <p>Basis + width</p>
+    <section class="container">
+        <div class="item basis-100px flex-grow1">134534</div>
+        <div class="item">34542</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item basis-100px">5</div>
+    </section>
+
+
+    
+</body>
+</html>
