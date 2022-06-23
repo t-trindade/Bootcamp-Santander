@@ -1,0 +1,28 @@
+
+header{
+    background-color: rgba(5, 53, 119, 0.993);
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+header a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-menu ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
