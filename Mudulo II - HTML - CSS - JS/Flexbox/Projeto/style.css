@@ -53,3 +53,26 @@ header a{
     display: block;
     margin-left: 35px;
 }
+
+.quem-somos{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.quem-somos h2{
+    font-size: 36px;
+    color:rgba(5, 53, 119, 0.993);
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.quem-somos h2::before{
+    content: "";
+    height: 40px;
+    width: 5px;
+    margin-right: 5px;
+    background-color:  rgba(5, 53, 119, 0.993);
+}
