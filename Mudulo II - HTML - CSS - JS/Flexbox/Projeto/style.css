@@ -26,3 +26,30 @@ header a{
     align-items: center;
 }
 
+.apresentacao{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Titulo-apresentacao{
+    min-width: 200px
+}
+
+.Titulo-apresentacao h1{
+    font-size: 48px;
+    color:rgba(5, 53, 119, 0.993);
+    margin-bottom: 10px;
+}
+
+.Titulo-apresentacao a{
+    text-decoration: none;
+    background-color:rgba(5, 53, 119, 0.993);
+    color: aliceblue;
+    text-align: center;
+    border-radius: 30px;
+    width: 120px;
+    display: block;
+    margin-left: 35px;
+}
