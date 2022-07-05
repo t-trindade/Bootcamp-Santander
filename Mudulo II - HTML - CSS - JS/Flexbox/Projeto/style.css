@@ -5,18 +5,16 @@ header{
     justify-content: space-between;
     color: aliceblue;
 }
-
 header a{
     color: aliceblue;
     text-decoration: none;
 }
-
 .flex-container{
     display: flex;
-    max-width: 992px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    margin: 20px;
 }
 .container-menu ul{
     display: flex;
@@ -25,24 +23,23 @@ header a{
     justify-content: space-between;
     align-items: center;
 }
-
 .apresentacao{
     margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
-.Titulo-apresentacao{
-    min-width: 200px
+.apresentacao img{
+    display: block;
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
 }
-
 .Titulo-apresentacao h1{
     font-size: 48px;
     color:rgba(5, 53, 119, 0.993);
     margin-bottom: 10px;
 }
-
 .Titulo-apresentacao a{
     text-decoration: none;
     background-color:rgba(5, 53, 119, 0.993);
@@ -53,22 +50,23 @@ header a{
     display: block;
     margin-left: 35px;
 }
-
 .quem-somos{
     margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
-
+.quem-somos img{
+    display: block;
+    width: 100%;
+    min-width: 300px;
+}
 .quem-somos h2{
     font-size: 36px;
     color:rgba(5, 53, 119, 0.993);
     margin-bottom: 10px;
     display: flex;
 }
-
 .quem-somos h2::before{
     content: "";
     height: 40px;
@@ -76,3 +74,35 @@ header a{
     margin-right: 5px;
     background-color:  rgba(5, 53, 119, 0.993);
 }
+.servicos{
+    background-color: rgba(5, 53, 119, 0.993);
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.item-servico{
+  text-align: center;
+  color: aliceblue;
+}
+
+.item-servico img{
+    width: 70%;
+  }
+
+.item-servico a{
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(101, 117, 239);
+  }
+
+.servicos h2{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+
+
