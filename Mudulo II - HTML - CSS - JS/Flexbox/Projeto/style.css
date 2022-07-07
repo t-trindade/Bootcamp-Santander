@@ -11,10 +11,9 @@ header a{
 }
 .flex-container{
     display: flex;
-    width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
+    max-width: 100vmax;
 }
 .container-menu ul{
     display: flex;
@@ -40,7 +39,7 @@ header a{
     color:rgba(5, 53, 119, 0.993);
     margin-bottom: 10px;
 }
-.Titulo-apresentacao a{
+.btn{
     text-decoration: none;
     background-color:rgba(5, 53, 119, 0.993);
     color: aliceblue;
@@ -80,16 +79,19 @@ header a{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    margin: 0;
+}
+.tipo-de-servico{
+    width: 100%;
+    justify-content: space-around;
 }
 .item-servico{
   text-align: center;
   color: aliceblue;
 }
-
 .item-servico img{
     width: 70%;
   }
-
 .item-servico a{
     background-color: aliceblue;
     padding: 8px;
@@ -98,10 +100,42 @@ header a{
     text-align: center;
     color: rgb(101, 117, 239);
   }
-
 .servicos h2{
     color: aliceblue;
     font-size: 30px;
+}
+
+.container-planos{
+    flex-direction: column;  
+}
+
+.container-planos h2{
+    color: rgb(5, 53, 119, 0.993);
+    font-size: 30px;
+}
+
+.planos{
+   align-items: flex-end;
+   justify-content: space-around;
+   width: 80%
+}
+
+.item-plano{
+    padding: 15px;
+    border: 3px solid rgb(5, 53, 119, 0.993);
+    text-align: center;
+}
+
+.item-plano h3::after{
+    display: block;
+    content: "";
+    background-color: rgb(5, 53, 119, 0.993);
+    width: 100%;
+    height: 3px;
+}
+
+#lista{
+    text-align: left;
 }
 
 
