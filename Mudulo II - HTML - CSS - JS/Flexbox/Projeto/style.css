@@ -115,6 +115,7 @@ header a{
 }
 
 .planos{
+   margin-bottom: 50px;
    align-items: flex-end;
    justify-content: space-around;
    width: 80%
@@ -136,6 +137,33 @@ header a{
 
 #lista{
     text-align: left;
+}
+
+.item-plano ul li{
+    list-style: none;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.item-plano ul li::before{
+    margin-right: 8px;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: rgb(5, 53, 119, 0.993);
+}
+footer{
+    align-items: center;
+    height: 40px;
+    justify-content: space-around;
+    display: flex;
+    background-color: rgb(5, 53, 119, 0.993);
+    color: aliceblue;
+}
+
+footer div p{
+    margin: 10px;
 }
 
 
