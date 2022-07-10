@@ -59,6 +59,7 @@ header a{
     display: block;
     width: 100%;
     min-width: 300px;
+    max-width: 600px;
 }
 .quem-somos h2{
     font-size: 36px;
@@ -166,5 +167,44 @@ footer div p{
     margin: 10px;
 }
 
+/* Mobile */
+
+@media(max-width: 992px){
+
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-menu{
+        display: flex;
+        width: 100%;
+    }
+
+    .container-menu ul{
+        padding: 0;
+        justify-content: space-around;  
+    }
+    .apresentacao{
+        flex-direction: column;
+    }
+    .apresentacao h1{
+        text-align: center;
+    }
+    .quem-somos{
+        flex-direction: column-reverse;
+    }
+    .item-servico{
+        margin: 10px;
+    }
+    .item-plano{
+        margin: 10px;
+    }
+    footer p{
+        font-size: 13px;
+    }
+
+
+}
 
 
